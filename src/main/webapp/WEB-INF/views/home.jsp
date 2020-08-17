@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<style>
+	#cen{
+	width : 180px;
+ 	margin : 0 auto;
+	}
+	</style>
+	
 </head>
 
 <div  style="text-align:center">
@@ -28,7 +36,7 @@
 	})
 </script>
 <body>
-	<form name='homeForm' method="post" action="${pageContext.request.contextPath}/member/login">
+	<form id="cen" name='homeForm' method="post" action="${pageContext.request.contextPath}/member/login">
 		<c:if test="${member == null}">
 			<div>
 				<label for="userId"></label>
